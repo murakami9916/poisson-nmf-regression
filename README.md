@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Poisson Non-negative Matrix Factorization for Linear Regression
 
 # Model
@@ -6,15 +8,15 @@
 ![image](image/prob_model.jpg)
 
 ## Matrix factorization
-Poisson分布から観測されたスペクトルデータセット$`X \in \mathbb{R}_{+}^{D \times N}`$は：
+観測されたスペクトルデータセット$`X \in \mathbb{R}_{+}^{D \times N}`$は期待値を$`\Lambda`$とする$Poisson分布$`\mathcal{P}(\lambda)`$から生成されると仮定すると：
 
 $$
-    X \sim \mathcal{P}(\Lambda)　\text{where}　\Lambda = WH
+    X \sim \mathcal{P}(\Lambda)　\text{where}　\Lambda = WH.
 $$
 
-で表現されると仮定する．$D$はエネルギー方向の次元数で，次元$N$はサンプル方向の次元数である．
+ここで，$`\Lambda`$は$`K`$次元の潜在変数により行列分解できると仮定する．$D$はエネルギー方向の次元数で，次元$N$はサンプル方向の次元数である．
 
-基底スペクトル$`W \in \mathbb{R}_{+}^{D \times K}`$，潜在変数$`H \in \mathbb{R}_{+}^{K \times N}`$は，それぞれ非負を仮定するため，ガンマ分布から生成する：
+基底スペクトル$`W \in \mathbb{R}_{+}^{D \times K}`$，潜在変数$`H \in \mathbb{R}_{+}^{K \times N}`$は，それぞれ非負を仮定するため，ガンマ分布$`\mathcal{G}(a, b)`$から生成する：
 
 $$
     W \sim \mathcal{G}(a_W, b_W), \text{}　H \sim \mathcal{G}(a_H, b_H).

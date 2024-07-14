@@ -1,7 +1,8 @@
-# Poisson non-Negative Matrix Factorization for Regression
+# Poisson Non-negative Matrix Factorization for Linear Regression
 
 # Model
 下記にこのモデルのグラフィカルモデルを示す．
+
 ![image](image/prob_model.jpg)
 
 ## Matrix factorization

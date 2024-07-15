@@ -30,3 +30,21 @@ $$
 $$
 
 回帰係数$`\boldsymbol{\beta}`$と分散$`\sigma^2`$はそれぞれガウス分布と半正規分布から生成されると仮定する．サンプリングにおいては，回帰係数$`\boldsymbol{\beta}`$は，最小２乗法により確定的に推定する．
+
+# Example
+
+## 真のスペクトル基底
+
+![image](https://github.com/user-attachments/assets/20038f1f-d5c5-41fb-b03c-19727be0b8e8)
+
+
+## 真のターゲット変数の生成
+
+真の重み係数$`\beta_{t}`$を$`\beta_{t} = (1.0, 1.5, -1.0, -1.5)^{\top}`$に設定した．  
+ターゲット変数の真の観測ノイズ$`\sigma_t`$は$`\sigma_t=0.7`$に設定した．
+
+生成したデータ
+
+![image](https://github.com/user-attachments/assets/ea01e497-9bec-4edc-a869-b11d90ced3da)
+
+

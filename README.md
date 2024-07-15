@@ -41,6 +41,8 @@ $$
 
 ## 生成したデータ
 
+$`K = 4, N = 100, D = 50`$に設定した．
+
 ![image](https://github.com/user-attachments/assets/ea01e497-9bec-4edc-a869-b11d90ced3da)
 
 ## 真のスペクトル基底

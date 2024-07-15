@@ -14,7 +14,13 @@ $$
     X \sim \mathcal{P}(\Lambda)　\text{where}　\Lambda = WH.
 $$
 
-ここで，$`\Lambda`$は$`K`$次元の潜在変数により行列分解できると仮定する．$D$はエネルギー方向の次元数で，次元$N$はサンプル方向の次元数である．
+スペクトルデータの要素$`X_{ij}`$は独立だと仮定する：
+
+$$
+    X_{ij} \sim \mathcal{P}(\Lambda_{ij})　\text{where}　\Lambda_{ij} = \sum_{k=1}^{K}{W_{ik} H_{kj}}.
+$$
+
+ここで，$`\Lambda`$は$`K`$次元の潜在変数により行列分解できると仮定する．$`D`$はエネルギー方向の次元数で，$`N`$はサンプル方向の次元数である．
 
 基底スペクトル$`W \in \mathbb{R}_{+}^{D \times K}`$，潜在変数$`H \in \mathbb{R}_{+}^{K \times N}`$は，それぞれ非負を仮定するため，ガンマ分布$`\mathcal{G}(a, b)`$から生成する：
 
@@ -26,7 +32,7 @@ $$
 目的変数$`\boldsymbol{y} \in \mathbb{R}^{N}`$は，潜在変数を係数$`\boldsymbol{\beta} \in \mathbb{R}^{K}`$による線形和で表現でき，分散$`\sigma^2`$のガウス分布から生成されると仮定する：
 
 $$
-    \boldsymbol{y} \sim \mathcal{N}(\mu_y = \boldsymbol{\beta} H, \sigma_y^2=\sigma^2)
+    y_{j} \sim \mathcal{N}(\mu_y = \boldsymbol{\beta} H_{:j}, \sigma_y^2=\sigma^2)
 $$
 
 回帰係数$`\boldsymbol{\beta}`$と分散$`\sigma^2`$はそれぞれガウス分布と半正規分布から生成されると仮定する．サンプリングにおいては，回帰係数$`\boldsymbol{\beta}`$は，最小２乗法により確定的に推定する．

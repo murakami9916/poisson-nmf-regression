@@ -25,7 +25,7 @@ $$
 基底スペクトル$`W \in \mathbb{R}_{+}^{D \times K}`$，潜在変数$`H \in \mathbb{R}_{+}^{K \times N}`$は，それぞれ非負を仮定するため，ガンマ分布$`\mathcal{G}(a, b)`$から生成する：
 
 $$
-    W \sim \mathcal{G}(a_W, b_W), \text{}　H \sim \mathcal{G}(a_H, b_H).
+    W_{ik} \sim \mathcal{G}(a_W, b_W), \text{}　H_{kj} \sim \mathcal{G}(a_H, b_H).
 $$
 
 ## Regression

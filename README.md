@@ -33,6 +33,10 @@ $$
 
 # Example
 
+## 生成したデータ
+
+![image](https://github.com/user-attachments/assets/ea01e497-9bec-4edc-a869-b11d90ced3da)
+
 ## 真のスペクトル基底
 
 ![image](https://github.com/user-attachments/assets/20038f1f-d5c5-41fb-b03c-19727be0b8e8)
@@ -43,8 +47,25 @@ $$
 真の重み係数$`\beta_{t}`$を$`\beta_{t} = (1.0, 1.5, -1.0, -1.5)^{\top}`$に設定した．  
 ターゲット変数の真の観測ノイズ$`\sigma_t`$は$`\sigma_t=0.7`$に設定した．
 
-生成したデータ
+# Result
 
-![image](https://github.com/user-attachments/assets/ea01e497-9bec-4edc-a869-b11d90ced3da)
+## Typical NMF for comparison
+
+### 推定されたスペクトル基底
+
+![image](https://github.com/user-attachments/assets/1ef02739-bdf9-4839-af72-12169ac22f99)
+
+## Our method
+
+### 推定されたスペクトル基底
+
+![image](https://github.com/user-attachments/assets/7c3a6067-55f8-4062-9637-1f7c1ba13ce7)
 
 
+### ターゲット変数の回帰結果
+
+![image](https://github.com/user-attachments/assets/a9dc85ac-58ac-4543-830f-668107698724)
+
+### 回帰の観測ノイズの事後分布
+
+![image](https://github.com/user-attachments/assets/177070d5-33f9-4861-a920-dd8bedc5da6d)

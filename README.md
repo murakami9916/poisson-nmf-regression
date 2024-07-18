@@ -8,7 +8,7 @@
 ![image](image/prob_model.jpg)
 
 ## Matrix factorization
-観測されたスペクトルデータセット$`X \in \mathbb{R}_{+}^{D \times N}`$は期待値を$`\Lambda`$とする$Poisson分布$`\mathcal{P}(\lambda)`$から生成されると仮定すると：
+観測されたスペクトルデータセット$`X \in \mathbb{R}_{+}^{D \times N}`$は期待値を$`\Lambda`$とするPoisson分布$`\mathcal{P}(\lambda)`$から生成されると仮定すると：
 
 $$
     X \sim \mathcal{P}(\Lambda)　\text{where}　\Lambda = WH.
@@ -35,7 +35,7 @@ $$
     y_{j} \sim \mathcal{N}(\mu_y = \boldsymbol{\beta} H_{:j}, \sigma_y^2=\sigma^2)
 $$
 
-回帰係数$`\boldsymbol{\beta}`$と分散$`\sigma^2`$はそれぞれガウス分布と半正規分布から生成されると仮定する．サンプリングにおいては，回帰係数$`\boldsymbol{\beta}`$は，最小２乗法により確定的に推定する．
+ここで，$`H_{:j} \in \mathbb{R}^{K}`$は$`j`$番目のサンプルデータの潜在変数である．回帰係数$`\boldsymbol{\beta}`$と分散$`\sigma^2`$はそれぞれガウス分布と半正規分布から生成されると仮定する．サンプリングにおいては，回帰係数$`\boldsymbol{\beta}`$は，最小２乗法により確定的に推定する．
 
 # Example
 

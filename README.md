@@ -29,13 +29,13 @@ $$
 $$
 
 ## Regression
-目的変数$`\boldsymbol{y} \in \mathbb{R}^{N}`$は，潜在変数を係数$`\boldsymbol{\beta} \in \mathbb{R}^{K}`$による線形和で表現でき，分散$`\sigma^2`$のガウス分布から生成されると仮定する：
+目的変数$`\mathbf{y} \in \mathbb{R}^{N}`$は，潜在変数を係数$`\mathbf{\beta} \in \mathbb{R}^{K}`$による線形和で表現でき，分散$`\sigma^2`$のガウス分布から生成されると仮定する：
 
 $$
-    y_{j} \sim \mathcal{N}(\mu_y = \boldsymbol{\beta} H_{:j}, \sigma_y^2=\sigma^2)
+    y_{j} \sim \mathcal{N}(\mu_y = \mathbf{\beta} H_{:j}, \sigma_y^2=\sigma^2)
 $$
 
-ここで，$`H_{:j} \in \mathbb{R}^{K}`$は$`j`$番目のサンプルデータの潜在変数である．回帰係数$`\boldsymbol{\beta}`$と分散$`\sigma^2`$はそれぞれガウス分布と半正規分布から生成されると仮定する．サンプリングにおいては，回帰係数$`\boldsymbol{\beta}`$は，最小２乗法により確定的に推定する．
+ここで，$`H_{:j} \in \mathbb{R}^{K}`$は$`j`$番目のサンプルデータの潜在変数である．回帰係数$`\mathbf{\beta}`$と分散$`\sigma^2`$はそれぞれガウス分布と半正規分布から生成されると仮定する．サンプリングにおいては，回帰係数$`\mathbf{\beta}`$は，最小２乗法により確定的に推定する．
 
 # Example
 
